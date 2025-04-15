@@ -5,6 +5,7 @@ import FeedbackController from "./feedback.controller.js";
 const router = express.Router();
 
 router.get("/", DisneyController.getData);
+router.get("/id/:id", DisneyController.apiGetDisneyById);
 
 router.post("/feedback", FeedbackController.apiPostFeedback);
 router.put("/feedback", FeedbackController.apiUpdateFeedback);
