@@ -3,8 +3,10 @@ import FeedbackDAO from "../dao/feedbackDAO.js";
 export default class FeedbackController {
     static async apiPostFeedback(req, res) {
         try {
-            const { disneyId, text, user_name, user_id } = req.body;
+            let { disneyId, text, user_name, user_id } = req.body;
             const date = new Date();
+
+            disneyId = parseInt(disneyId);
 
             const response = await FeedbackDAO.addFeedback({
                 disneyId,
@@ -16,6 +18,7 @@ export default class FeedbackController {
 
             res.json({ status: "success", feedback: response });
         } catch (error) {
+            console.error("Error in apiPostFeedback:", error); 
             res.status(500).json({ error: error.message });
         }
     }
@@ -34,6 +37,7 @@ export default class FeedbackController {
 
             res.json({ status: "success", feedback: response });
         } catch (error) {
+            console.error("Error in apiUpdateFeedback:", error); 
             res.status(500).json({ error: error.message });
         }
     }
@@ -49,6 +53,7 @@ export default class FeedbackController {
 
             res.json({ status: "success", feedback: response });
         } catch (error) {
+            console.error("Error in apiDeleteFeedback:", error); 
             res.status(500).json({ error: error.message });
         }
     }

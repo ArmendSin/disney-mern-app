@@ -1,9 +1,9 @@
 /**
  * Name: Armend Sinanovic  
- * Date: April 14, 2025  
+ * Date: April 28, 2025  
  * Course: IT-302  
  * Section: 454  
- * Assignment: IT302-Project Phase 4 
+ * Assignment: IT302-Project Phase 5 
  * Email: as554@njit.edu  
  */
 
@@ -22,6 +22,21 @@ class DisneyDataService {
 
   findByField(field, value) {
     return axios.get(`${API_URL}?${field}=${value}`);
+  }
+
+
+  createFeedback(data) {
+    return axios.post(`${API_URL}/feedback`, data);
+  }
+
+  updateFeedback(data) {
+    return axios.put(`${API_URL}/feedback`, data);
+  }
+
+  deleteFeedback(id, userId) {
+    return axios.delete(`${API_URL}/feedback`, {
+      data: { feedback_id: id, user_id: userId }
+    });
   }
 }
 

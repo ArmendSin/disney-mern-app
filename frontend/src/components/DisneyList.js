@@ -1,6 +1,6 @@
 /**
  * Name: Armend Sinanovic  
- * Date: April 14, 2025  
+ * Date: April 27, 2025  
  * Course: IT-302  
  * Section: 454  
  * Assignment: IT302-Project Phase 4 
@@ -47,32 +47,41 @@ function DisneyList() {
   };
 
   return (
-    <div>
+    <div className="container" style={{ padding: "20px" }}>
       <h2>Disney Records</h2>
 
-      <div>
-        <label>Search by Name:</label>
+      <div style={{ marginBottom: "20px" }}>
+        <label style={{ marginRight: "8px" }}>Search by Name:</label>
         <input
           type="text"
-          className="form-control"
           value={searchText}
           onChange={e => setSearchText(e.target.value)}
+          style={{ padding: "5px", marginRight: "10px", width: "200px" }}
         />
-        <button type="button" onClick={handleSearch}>
+        <button type="button" onClick={handleSearch} style={{ marginRight: "8px" }}>
           Search
         </button>
-        <button type="button" onClick={handleReset} style={{ marginLeft: "8px" }}>
+        <button type="button" onClick={handleReset}>
           Reset
         </button>
       </div>
 
-      <div>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
         {records.map(record => (
-          <div key={record._id}>
+          <div 
+            key={record._id} 
+            style={{
+              border: "1px solid #ccc",
+              borderRadius: "8px",
+              padding: "20px",
+              width: "300px",
+              boxShadow: "2px 2px 12px rgba(0,0,0,0.1)",
+              backgroundColor: "white"
+            }}
+          >
             <h3>{record.name}</h3>
-            <p>{record.description}</p>
+            {record.description && <p>{record.description.substring(0, 100)}...</p>}
             <Link to={`/as554_disney/${record._id}`}>View Details</Link>
-            <hr />
           </div>
         ))}
       </div>
