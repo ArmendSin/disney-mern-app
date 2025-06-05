@@ -3,11 +3,11 @@ A full-stack web application that allows users to browse and leave feedback on D
 
 Overview
 This application is a movie analysis platform where users can:
-    - View a list of Disney characters sourced from a MongoDB database.
-    - View detailed info about a character including films, games, TV shows, and metadata.
-    - Log in as a user (no authentication layer; any login name will work).
-    - Submit feedback/comments per character.
-    - View feedback left by other users for each character.
+- View a list of Disney characters sourced from a MongoDB database.
+- View detailed info about a character including films, games, TV shows, and metadata.
+- Log in as a user (no authentication layer; any login name will work).
+- Submit feedback/comments per character.
+- View feedback left by other users for each character.
 
 
 
