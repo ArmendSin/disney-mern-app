@@ -69,7 +69,7 @@ Feeback
 
 Application:
 Disney Homepage Records
-![Disney Records](images/Disney-Records.png)
+![Disney Records](images/Disney_Records.png)
 Character Feedback
 ![Feedback](images/Feedback.png)
 Insert Feedback
