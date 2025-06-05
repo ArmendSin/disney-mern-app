@@ -1,12 +1,3 @@
-/**
- * Name: Armend Sinanovic  
- * Date: April 27, 2025  
- * Course: IT-302  
- * Section: 454  
- * Assignment: IT302-Project Phase 5 
- * Email: as554@njit.edu  
- */
-
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import DisneyDataService from '../service/DisneyDataService';

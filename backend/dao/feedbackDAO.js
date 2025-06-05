@@ -1,12 +1,3 @@
-/**
- * Name: Armend Sinanovic  
- * Date: April 28, 2025  
- * Course: IT-302  
- * Section: 454  
- * Assignment: IT302-Project Phase 5 
- * Email: as554@njit.edu  
- */
-
 import { ObjectId } from "mongodb";
 
 let feedback;

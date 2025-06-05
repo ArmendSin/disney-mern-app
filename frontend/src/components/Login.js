@@ -1,12 +1,3 @@
-/**
- * Name: Armend Sinanovic  
- * Date: April 27, 2025  
- * Course: IT-302  
- * Section: 454  
- * Assignment: IT302-Project Phase 4 
- * Email: as554@njit.edu  
- */
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 

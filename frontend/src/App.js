@@ -1,18 +1,9 @@
-/**
- * Name: Armend Sinanovic  
- * Date: April 28, 2025  
- * Course: IT-302  
- * Section: 454  
- * Assignment: IT302-Project Phase 5 
- * Email: as554@njit.edu  
- */
-
 import React, { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import DisneyList from './components/DisneyList';
 import Disney from './components/Disney';
-import Login from './components/Login';           // <-- added
-import AddFeedback from './components/AddFeedback'; // <-- added
+import Login from './components/Login';           
+import AddFeedback from './components/AddFeedback'; 
 
 function App() {
   const [user, setUser] = useState(null);

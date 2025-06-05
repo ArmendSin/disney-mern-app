@@ -1,12 +1,3 @@
-/**
- * Name: Armend Sinanovic  
- * Date: April 28, 2025  
- * Course: IT-302  
- * Section: 454  
- * Assignment: IT302-Project Phase 5 
- * Email: as554@njit.edu  
- */
-
 import { client } from "../index.js";
 
 class DisneyDAO {
@@ -38,7 +29,6 @@ class DisneyDAO {
         return null;
       }
 
-      // ✅ Match the feedback using the integer id (NOT ObjectId)
       const feedback = await feedbackCollection
         .find({ disneyId: parseInt(id) })
         .toArray();
